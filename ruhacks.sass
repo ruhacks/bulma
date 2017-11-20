@@ -1,0 +1,63 @@
+@import "sass/utilities/initial-variables"
+@import "sass/utilities/functions"
+
+// Primary Palette
+
+$ryerson-blue: hsl(211, 100%, 30%) !default
+$ryerson-gold: hsl(52, 100%, 50%) !default
+
+$ryerson-blue-invert: findColorInvert($ryerson-blue) !default
+$ryerson-gold-invert: findColorInvert($ryerson-gold) !default
+
+// Secondary Palette
+// From darkest to lightest
+
+$blue-midnight:    hsl(216, 100%, 22%) !default
+$blue-lochmara:    hsl(204, 100%, 39%) !default
+$blue-cerulean:    hsl(198, 100%, 47%) !default
+$blue-malibu:      hsl(200, 87%, 66%) !default
+$orange-web:       hsl(38, 100%, 50%) !default
+$yellow-supernova: hsl(46, 100%, 52%) !default
+$yellow-turbo:     hsl(56, 100%, 50%) !default
+$gray-dusty:       hsl(0, 0%, 60%) !default
+$gray-alto:        hsl(0, 0%, 85%) !default
+
+$blue-midnight-invert:    findColorInvert($blue-midnight) !default
+$blue-lochmara-invert:    findColorInvert($blue-lochmara) !default
+$blue-cerulean-invert:    findColorInvert($blue-cerulean) !default
+$blue-malibu-invert:      findColorInvert($blue-malibu) !default
+$orange-web-invert:       findColorInvert($orange-web) !default
+$yellow-supernova-invert: findColorInvert($yellow-supernova) !default
+$yellow-turbo-invert:     findColorInvert($yellow-turbo) !default
+$gray-dusty-invert:       findColorInvert($gray-dusty) !default
+$gray-alto-invert:        findColorInvert($gray-alto) !default
+
+// Tertiary Palette
+
+$orange-blaze:       hsl(27, 100%, 50%) !default
+$red-ribbon:         hsl(347, 100%, 45%) !default
+$red-rose:           hsl(331, 100%, 46%) !default
+$purple-seance:      hsl(294, 60%, 32%) !default
+$blue-marguerite:    hsl(240, 38%, 61%) !default
+$yellow-buddha-gold: hsl(60, 100%, 37%) !default
+$green-haze:         hsl(146, 100%, 30%) !default
+$blue-bondi:         hsl(183, 100%, 34%) !default
+$blue-tradewind:     hsl(168, 40%, 58%) !default
+
+$orange-blaze-invert:       findColorInvert($orange-blaze) !default
+$red-ribbon-invert:         findColorInvert($red-ribbon) !default
+$red-rose-invert:           findColorInvert($red-rose) !default
+$purple-seance-invert:      findColorInvert($purple-seance) !default
+$blue-marguerite-invert:    findColorInvert($blue-marguerite) !default
+$yellow-buddha-gold-invert: findColorInvert($yellow-buddha-gold) !default
+$green-haze-invert:         findColorInvert($green-haze) !default
+$blue-bondi-invert:         findColorInvert($blue-bondi) !default
+$blue-tradewind-invert:     findColorInvert($blue-tradewind) !default
+
+// Derived Colors Override
+
+$primary: $ryerson-blue !default
+$primary-inverted: $ryerson-blue-invert !default
+
+
+@import "bulma"
