@@ -32,10 +32,9 @@
     "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
     "build-autoprefix": "postcss --use autoprefixer --map false --output css/bulma.css css/bulma.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
+    "build-sass": "node-sass --output-style expanded --source-map true ruhacks.sass css/bulma.css",
     "deploy": "npm run build",
-    "start": "npm run build-sass -- --watch",
-    "test-sass": "node-sass --output-style expanded docs/bulma-test.sass docs/css/bulma-test.css"
+    "start": "npm run build-sass -- --watch"
   },
   "files": [
     "css",
