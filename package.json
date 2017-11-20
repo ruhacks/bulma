@@ -3,12 +3,13 @@
   "version": "0.6.1",
   "homepage": "https://bulma.io",
   "author": "Jeremy Thomas <bbxdesign@gmail.com> (http://jgthms.com)",
+  "contributors": ["RU Hacks <helloworld@ruhacks.com (http://www.ruhacks.com)"],
   "description": "Modern CSS framework based on Flexbox",
   "main": "bulma.sass",
   "style": "bulma/css/bulma.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jgthms/bulma.git"
+    "url": "git+https://github.com/ruhacks/bulma.git"
   },
   "license": "MIT",
   "keywords": [
@@ -19,7 +20,7 @@
     "framework"
   ],
   "bugs": {
-    "url": "https://github.com/jgthms/bulma/issues"
+    "url": "https://github.com/ruhacks/bulma/issues"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
@@ -32,13 +33,8 @@
     "build-autoprefix": "postcss --use autoprefixer --map false --output css/bulma.css css/bulma.css",
     "build-clean": "rimraf css",
     "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
-    "deploy": "npm run build && npm run docs",
-    "docs": "npm run docs-sass && npm run docs-autoprefix",
-    "docs-autoprefix": "postcss --use autoprefixer --map false --output docs/css/bulma-docs.css docs/css/bulma-docs.css",
-    "docs-sass": "node-sass --output-style expanded docs/bulma-docs.sass docs/css/bulma-docs.css",
+    "deploy": "npm run build",
     "start": "npm run build-sass -- --watch",
-    "start-docs": "npm run docs-sass -- --watch",
-    "start-test": "npm run test-sass -- --watch",
     "test-sass": "node-sass --output-style expanded docs/bulma-test.sass docs/css/bulma-test.css"
   },
   "files": [
