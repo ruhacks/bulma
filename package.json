@@ -3,7 +3,9 @@
   "version": "0.6.1",
   "homepage": "https://bulma.io",
   "author": "Jeremy Thomas <bbxdesign@gmail.com> (http://jgthms.com)",
-  "contributors": ["RU Hacks <helloworld@ruhacks.com (http://www.ruhacks.com)"],
+  "contributors": [
+    "RU Hacks <helloworld@ruhacks.com (http://www.ruhacks.com)"
+  ],
   "description": "Modern CSS framework based on Flexbox",
   "main": "bulma.sass",
   "style": "bulma/css/bulma.css",
@@ -24,6 +26,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
+    "crass": "^0.11.2",
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.1.0",
     "rimraf": "^2.6.1"
@@ -33,7 +36,8 @@
     "build-autoprefix": "postcss --use autoprefixer --map false --output css/bulma.css css/bulma.css",
     "build-clean": "rimraf css",
     "build-sass": "node-sass --output-style expanded --source-map true ruhacks.sass css/bulma.css",
-    "deploy": "npm run build",
+    "deploy": "npm run build && npm run minify-sass",
+    "minify-sass": "crass css/bulma.css > css/bulma.min.css",
     "start": "npm run build-sass -- --watch"
   },
   "files": [
