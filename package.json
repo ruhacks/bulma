@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.0",
-    "crass": "^0.11.2",
+    "crass": "^0.12.3",
     "node-sass": "^4.5.3",
     "postcss-cli": "^7.1.1",
     "rimraf": "^2.6.1"
